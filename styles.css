@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  width: 100%;
+}
+#title {
+  text-align: center;
+  font-size: 48px
+}
+#description {
+  text-align: center;
+  font-size: 19px;
+}
+form {
+  font-size: 16px;
+}
+fieldset {
+  background-color: darkblue;
+  border: none;
+  margin: auto auto;
+  max-width:500px;
+}
+label {
+  display: block
+}
+input[id="name"] {
+  margin: 3px 2px;
+}
+input[type="email"]{
+  margin: 3px 2px;
+}
+input[type="number"] {
+  margin: 3px 2px 3px 16px;
+}
+
+
+
+
+input[type="submit"] {
+  background-color: yellow;
+  color: blue;
+  display: block;
+  width: 70%;
+  margin: 2px auto;
+  font-size: 2em;
+  min-width: 50px;
+  max-width: 525px
+  
+}

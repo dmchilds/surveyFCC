@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Survey Form</title>
+ <link rel="stylesheet" type="text/css" href="styles.css" 
+ </head>
+ <body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is my short survey to find if I am suited for web development.</p>
+
+  <form id="survey-form" action="#">
+   <fieldset>
+    <label for="name" id="name-label">Name:<input id="name" type="text" placeholder="Full Name" required></label><br/>
+    <label for="email" id="email-label">Email:<input type="email" id="email" name="email" placeholder="you@freecodecamp.org" pattern="[A-Z a-z 0-9 @]{30}" required></label><br/>
+    <label for="number" id="number-label">Age:<input id="number" type="number" name="number" placeholder="18" pattern="[0-9]" min="18" max="99" required></label> 
+   </fieldset>
+
+   <fieldset>
+    <label>Should I try to be a web developer?
+     <select name="choice">
+      <option value="">(select one)</option>
+      <option value="yes">Sure</option>
+      <option value="No">Negative</option>
+      <option value="Unsure">Give it a shot</option>
+     </select>
+    </label>
+   </fieldset>
+  
+   <fieldset>
+    <label name="tech">What other technology should I try to learn?</label><br/>
+    <label for="angular"><input type="checkbox" name="tech" id="angular">Angular</label>
+    <label for="react"><input type="checkbox" name="tech" id="react">React</label>
+    <label for="php"><input type="checkbox" name="tech" id="php">PHP</label>
+    <label for="node.js"><input type="checkbox" name="tech" id="node.js">Node.js</label>
+    <label for="fryer"><input type="checkbox" name="tech" id="fryer">Frialator</label><br/>
+    
+    <label>Do you have any advice that can help me on my journey?<br/><br/><input type="radio" name="advice"/>yes</label>
+    <label><input type="radio" name="advice"/>no</label><br/>
+    <textarea name="advice" rows="4" cols="35" placeholder="Enter your advice please"></textarea>
+    </label>
+   </fieldset>
+    <input class="button" type="submit" value="Submit"/>
+  </form>
+ </body>
+</html>
